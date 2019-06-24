@@ -4,17 +4,18 @@
 <meta charset="UTF-8">
 	<title></title>
 </head>
-<body>
-<form th:action="@{/}" th:object="${mainmodel}" method="post">
-<p>Task</p>
-<input type="text" th:field="*{task}" placeholder="task"/>
- <!--<input type="text" th:placeholder="Enter Task here" th:field="*{task}"> </input>
-<input placeholder="how much have you done" th:field="*{status}"}></input>
-<input placeholder="Enter notes here" th:field="*{note}"}> </input> -->
-<button type="submit">Submit</button>
-</form>
-<div>
-<p>Task List</p>
-</div>
-</body>
-</html>
+	<body>
+		<form action="#" th:action="@{/task}" th:object="${mainmodel}" method="post">
+			<p>Task</p>
+			<input type="text" th:value="${task}" placeholder="task"/>
+	<!-- 	 	<input type="text" th:placeholder="Enter Task here" th:value="${task}"> </input>
+			<input placeholder="how much have you done" th:field="*{status}"}></input>
+			<input placeholder="Enter notes here" th:field="*{note}"}> </input> -->
+			<button type="submit">Submit</button>
+		</form>
+		<div>
+			<p>Task List</p>
+		</div>
+	</body>
+</html> 
+
